@@ -9,11 +9,10 @@
 }
 
 body {
-  color: #fff;
+  color: #D5A694;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color: #262D41;
 }
 
 ul {
@@ -64,7 +63,7 @@ a {
 }
 
 .navbar a:hover{
-  color: #ff4532;
+  opacity: .75;
 }
 
 .side {
@@ -130,15 +129,16 @@ text-align: center;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  background: #FBAB7E;
-  color: #fff;
+  background: #D5A694;
+  color: #262D41;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease 0;
+  transition: all 1s
 }
 
 .botonPedido:hover{
-  background-color: #ff8e4d;
+  background-color: #D5A694;
+  opacity: .75;
 }
 
 .tituloHistoria {
@@ -197,7 +197,6 @@ text-align: center;
 }
 
 .contacto h1{
-  color: #fff;
   font-size: 30px;
   font-weight: 700;
   text-align: left;
@@ -206,11 +205,10 @@ text-align: center;
 }
 
 .contacto form label{
-  color: #fff;
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 35px;
-  padding: 5px;
+  padding: 4px;
 }
 
 .contacto form input{
@@ -221,19 +219,23 @@ margin-left: 40px;
   margin-left: 40px;
 }
 
-.botonEnviar{
+.submitBtn{
   margin-top: 5px;
-  padding: 5px 10px;
-  text-decoration: none;
+  padding: 6px 8px;
   text-transform: uppercase;
-  text-align: center;
   font-size: 14px;
-  font-weight: 400;
-  background: #ff4532;
-  color: #fff;
-  border-radius: 5px;
+  font-weight: 600;
+  background: #D5A694;
+  color: #262D41;
   cursor: pointer;
-  display: block;
+  transition: all 1s;
+  border-style: none;
+  border-radius: 2px;
+}
+
+.submitBtn:hover {
+  background-color: #D5A694;
+  opacity: .75;
 }
 
 .tituloSucursales {
@@ -244,7 +246,6 @@ margin-left: 40px;
 }
 
 .sucursales h1{
-  color: #fff;
   font-size: 30px;
   font-weight: 700;
   text-align: left;
@@ -253,7 +254,6 @@ margin-left: 40px;
 }
 
 .sucursales h2{
-  color: #fff;
   font-size: 25px;
   font-weight: 700;
   text-align: left;
@@ -263,7 +263,6 @@ margin-left: 40px;
 }
 
 .sucursales p{
-  color: #fff;
   font-size: 17px;
   font-weight: 300;
   padding: 5px;
@@ -274,7 +273,6 @@ margin-left: 40px;
 .sucursales iframe{
   margin: 20px 0px 20px 40px;
 }
-
 
 .footer {
   font-size: 16px;
@@ -287,8 +285,6 @@ margin-left: 40px;
   padding: 5px;
   margin-top: 100px;
 }
-
-
 
 /* GRIDS */
 
@@ -363,6 +359,17 @@ margin-left: 40px;
   }
   .experiencia {
     font-size: 20px;
+    margin-bottom: 50px;
+  }
+  /* Boton bootstrap */
+  .btn {
+    margin: 50px;
+  }
+  .textoIndex{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
   }
   .footer {
     font-size: 16px;
