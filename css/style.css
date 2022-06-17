@@ -11,7 +11,7 @@
 body {
   color: #D5A694;
   font-family: 'Poppins', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   background-color: #262D41;
 }
 
@@ -25,8 +25,8 @@ a {
 }
 
 .container > * {
-  padding: 20px;
-  /* border: 1px solid; */
+  padding: 1.3rem;
+  /* border: 1px solid white; */
 }
 
 /* ESTILOS */
@@ -40,12 +40,12 @@ a {
 }
 
 .header h1 {
-  font-size: 30px;
+  font-size: 2rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .navbar {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -53,13 +53,13 @@ a {
 }
 
 .navbar li {
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .navbar a {
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 1.25rem;
   transition: all 0.3s ease 0;
 }
 
@@ -71,28 +71,28 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   /* background-color: #E08F62; */
 }
 
 .side h2 {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 1.25rem;
   text-align: center;
 }
 
 .side h3 {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 25px;
-  margin-top: 25px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
   text-align: center;
 }
 
 .side p {
 font-weight: 300;
-font-size: 16px;
+font-size: 1rem;
 text-align: center;
 }
 
@@ -107,32 +107,35 @@ text-align: center;
 
 .hola {
   text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 70px;
-  font-weight: 700;
+  /* letter-spacing: 0.3rem; */
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 .experiencia {
   font-family: 'Satisfy', cursive;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 .botonCentro{
   display: block;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .botonPedido{
-  padding: 10px 15px;
+  padding: 0.6rem 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
   background: #D5A694;
   color: #262D41;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   cursor: pointer;
   transition: all 1s
 }
@@ -143,43 +146,73 @@ text-align: center;
 }
 
 .tituloHistoria {
-  font-size: 50px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .textoHistoria {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 300;
   text-align: justify;  
 }
 
 .imagenRestaurante {
   width: 100%;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .tituloMenu {
-  font-size: 50px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .textoMenu {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 300;
   text-align: justify;  
 }
 
 .imagenMenu {
   width: 100%;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tituloSucursales {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sucursales h2{
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.sucursales p{
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  text-align: justify;  
+}
+
+.sucursales iframe{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  height: 200px;
 }
 
 .contacto {
@@ -190,48 +223,35 @@ text-align: center;
 }
 
 .tituloContacto {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.contacto h1{
-  font-size: 30px;
-  font-weight: 700;
-  text-align: left;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .contacto form label{
+  font-size: 1rem;
+  font-weight: 300;
   display: flex;
-  margin-top: 20px;
-  margin-left: 35px;
-  padding: 4px;
-}
-
-.contacto form input{
-margin-left: 40px;
-}
-
-.mensaje{
-  margin-left: 40px;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .submitBtn{
-  margin-top: 5px;
-  padding: 6px 8px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.5rem;
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 500;
   background: #D5A694;
   color: #262D41;
   cursor: pointer;
   transition: all 1s;
   border-style: none;
-  border-radius: 2px;
+  border-radius: 0.2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .submitBtn:hover {
@@ -239,52 +259,30 @@ margin-left: 40px;
   opacity: .75;
 }
 
-.tituloSucursales {
-  font-size: 50px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+input[type = text] {
+  width: 100%;
+  padding: 1px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 
-.sucursales h1{
-  font-size: 30px;
-  font-weight: 700;
-  text-align: left;
-  margin-top: 40px;
-  margin-left: 40px;
+input[type = email] {
+  width: 100%;
+  padding: 1px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 
-.sucursales h2{
-  font-size: 25px;
-  font-weight: 700;
-  text-align: left;
-  margin-top: 20px;
-  margin-left: 40px;
-  text-decoration: underline;
-}
-
-.sucursales p{
-  font-size: 17px;
-  font-weight: 300;
-  padding: 5px;
-  margin-top: 0px;
-  margin-left: 35px;
-}
-
-.sucursales iframe{
-  margin: 20px 0px 20px 40px;
+.mensaje {
+  width: 100%;
 }
 
 .footer {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  font-size: 1rem;
+  font-weight: 300;
   text-align: center;
+  padding: 1rem;
   /* background-color: #DED7B1; */
-  padding: 5px;
-  margin-top: 100px;
 }
 
 /* GRIDS */
@@ -337,46 +335,75 @@ margin-left: 40px;
     "footer footer";
   }
   .header h1 {
-    font-size: 35px;
+    font-size: 2.5rem;
   }
   .navbar li {
-    padding: 10px;
+    padding: 0.5rem;
   }
   .navbar a {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
   .side h2 {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
   .side h3 {
-    font-size: 25px;
-    margin-top: 25px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
   .side p {
-  font-size: 16px;
+  font-size: 1rem;
   }
   .hola {
-    font-size: 80px;
+    font-size: 4.7rem;
   }
   .experiencia {
-    font-size: 20px;
-    margin-bottom: 50px;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
   }
-  /* Boton bootstrap */
-  .btn {
-    margin: 50px;
+  .botonCentro {
+    margin-top: 6rem;
   }
-  .textoIndex{
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 20px;
+  .tituloHistoria {
+    font-size: 2rem;
+    margin-top: 0rem;
+  }
+  .tituloMenu {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .tituloSucursales {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .sucursales iframe{
+    width: 400px;
+    height: 300px;
+  }
+  .tituloContacto {
+    font-size: 2rem;
+    margin-top: 0rem;
+  }
+  .contacto form label{
+    margin-top: 0.75em;
+    font-size: 1rem;
+  }
+  input[type = text] {
+    width: 30vh;
+    padding: 3px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  input[type = email] {
+    width: 30vh;
+    padding: 3px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  .mensaje {
+    width: 30vh;
   }
   .footer {
-    font-size: 16px;
-  }
-  .textoHistoria {
-    text-align: justify;
+    font-size: 1rem;
   }
 }
 
@@ -394,35 +421,96 @@ margin-left: 40px;
     "footer footer footer";
   }
   .header h1 {
-    font-size: 40px;
+    font-size: 3rem;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .navbar li {
-    padding: 10px;
+    padding: 1rem;
   }
   .navbar a {
-    font-size: 25px;
+    font-size: 1.75rem;
   }
   .side h2 {
-    font-size: 30px;
+    font-size: 1.75rem;
   }
   .side h3 {
-    font-size: 30px;
-    margin-top: 25px;
+    font-size: 1.75rem;
+    margin-top: 1rem;
   }
   .side p {
-  font-size: 18px;
+  font-size: 1.1rem;
   }
   .hola {
-    font-size: 90px;
+    font-size: 7rem;
   }
   .experiencia {
-    font-size: 22px;
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
   }
-  .footer {
-    font-size: 18px;
+  .botonCentro {
+    margin-top: 9rem;
+  }
+  .tituloHistoria {
+    font-size: 2.2rem;
+    margin-top: 3rem;
   }
   .textoHistoria {
-    text-align: center;
+    font-size: 1.1rem;
+  }
+  .tituloMenu {
+    font-size: 2.2rem;
+  }
+  .textoMenu {
+    font-size: 1.1rem;
+  }
+  .tituloSucursales {
+    font-size: 2.2rem;
+  }
+  .sucursales h2{
+    font-size: 1.5rem;
+  }
+  .sucursales p{
+    font-size: 1.1rem;
+  }
+  .sucursales iframe{
+    width: 500px;
+    height: 400px;
+  }
+  .tituloContacto {
+    font-size: 2.2rem;
+  }
+  .contacto form label{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  input[type = text] {
+    width: 50vh;
+    padding: 3px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type = email] {
+    width: 50vh;
+    padding: 3px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  .submitBtn{
+    margin-top: 1rem;
+    padding: 0.75rem 0.75rem;
+  }
+
+  .mensaje {
+    width: 50vh;
+  }
+  .footer {
+    font-size: 1.1rem;
   }
 }
 
