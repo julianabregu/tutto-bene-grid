@@ -29,8 +29,6 @@ a {
   /* border: 1px solid white; */
 }
 
-/* ESTILOS */
-
 .header {
   display: flex;
   align-items: center;
@@ -41,7 +39,7 @@ a {
 
 .header h1 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -58,7 +56,7 @@ a {
 
 .navbar a {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.25rem;
   transition: all 0.3s ease 0;
 }
@@ -77,21 +75,21 @@ a {
 
 .side h2 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.25rem;
   text-align: center;
 }
 
 .side h3 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.25rem;
   margin-top: 0.5rem;
   text-align: center;
 }
 
 .side p {
-font-weight: 300;
+font-weight: 400;
 font-size: 1rem;
 text-align: center;
 }
@@ -109,13 +107,13 @@ text-align: center;
   text-transform: uppercase;
   /* letter-spacing: 0.3rem; */
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1rem;
 }
 
 .experiencia {
   font-family: 'Satisfy', cursive;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25rem;
   text-align: center;
 }
@@ -132,7 +130,7 @@ text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   background: #D5A694;
   color: #262D41;
   border-radius: 0.3rem;
@@ -147,14 +145,14 @@ text-align: center;
 
 .tituloHistoria {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .textoHistoria {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: justify;  
 }
 
@@ -165,36 +163,16 @@ text-align: center;
   margin-bottom: 1rem;
 }
 
-.tituloMenu {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.textoMenu {
-  font-size: 1rem;
-  font-weight: 300;
-  text-align: justify;  
-}
-
-.imagenMenu {
-  width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
 .tituloSucursales {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .sucursales h2{
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 1rem;
   margin-left: 0.5rem;
 }
@@ -202,7 +180,7 @@ text-align: center;
 .sucursales p{
   padding: 0.5rem;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 0.5rem;
   text-align: justify;  
 }
@@ -224,14 +202,14 @@ text-align: center;
 
 .tituloContacto {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .contacto form label{
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   margin-top: 0.5rem;
   text-align: center;
@@ -244,7 +222,7 @@ text-align: center;
   padding: 0.5rem 0.5rem;
   text-transform: uppercase;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
   background: #D5A694;
   color: #262D41;
   cursor: pointer;
@@ -261,14 +239,14 @@ text-align: center;
 
 input[type = text] {
   width: 100%;
-  padding: 1px 15px;
+  padding: 3px 15px;
   margin: 5px 0;
   box-sizing: border-box;
 }
 
 input[type = email] {
   width: 100%;
-  padding: 1px 15px;
+  padding: 3px 15px;
   margin: 5px 0;
   box-sizing: border-box;
 }
@@ -277,9 +255,13 @@ input[type = email] {
   width: 100%;
 }
 
+.footer a {
+  text-decoration: underline;
+}
+
 .footer {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   padding: 1rem;
   /* background-color: #DED7B1; */
@@ -326,6 +308,7 @@ input[type = email] {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .container {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
@@ -334,74 +317,93 @@ input[type = email] {
     "sidebar content"
     "footer footer";
   }
+
   .header h1 {
     font-size: 2.5rem;
   }
+
   .navbar li {
     padding: 0.5rem;
   }
+
   .navbar a {
     font-size: 1.5rem;
   }
+
   .side h2 {
     font-size: 1.5rem;
   }
+
   .side h3 {
     font-size: 1.5rem;
     margin-top: 1rem;
   }
+
   .side p {
   font-size: 1rem;
   }
+
   .hola {
     font-size: 4.7rem;
   }
+
   .experiencia {
     font-size: 1.5rem;
     margin-top: 0.5rem;
   }
+
   .botonCentro {
     margin-top: 6rem;
   }
+
   .tituloHistoria {
     font-size: 2rem;
     margin-top: 0rem;
   }
+
   .tituloMenu {
     font-size: 2rem;
     margin-top: 3rem;
   }
+
   .tituloSucursales {
     font-size: 2rem;
     margin-top: 3rem;
   }
+  
   .sucursales iframe{
     width: 400px;
     height: 300px;
   }
+
   .tituloContacto {
     font-size: 2rem;
     margin-top: 0rem;
   }
+
   .contacto form label{
     margin-top: 0.75em;
     font-size: 1rem;
   }
+
   input[type = text] {
     width: 30vh;
     padding: 3px 15px;
     margin: 5px 0;
     box-sizing: border-box;
   }
+
   input[type = email] {
     width: 30vh;
     padding: 3px 15px;
     margin: 5px 0;
     box-sizing: border-box;
   }
+
   .mensaje {
     width: 30vh;
   }
+
   .footer {
     font-size: 1rem;
   }
@@ -413,90 +415,118 @@ input[type = email] {
   }
   .container {
     grid-template-rows: auto 1fr 1fr;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns:1fr 4fr 1fr;
     grid-template-areas: 
     "header header header"
     "navbar content sidebar"
     "navbar content sidebar"
     "footer footer footer";
   }
+
   .header h1 {
     font-size: 3rem;
   }
+
   .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
+
   .navbar li {
     padding: 1rem;
   }
+
   .navbar a {
     font-size: 1.75rem;
   }
+  
+  .side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
   .side h2 {
     font-size: 1.75rem;
   }
+
   .side h3 {
     font-size: 1.75rem;
     margin-top: 1rem;
   }
+
   .side p {
   font-size: 1.1rem;
   }
+
   .hola {
     font-size: 7rem;
   }
+
   .experiencia {
     font-size: 1.75rem;
     margin-top: 0.5rem;
   }
+
   .botonCentro {
     margin-top: 9rem;
   }
+
   .tituloHistoria {
     font-size: 2.2rem;
     margin-top: 3rem;
   }
+
   .textoHistoria {
     font-size: 1.1rem;
   }
+
   .tituloMenu {
     font-size: 2.2rem;
   }
+
   .textoMenu {
     font-size: 1.1rem;
   }
+
   .tituloSucursales {
     font-size: 2.2rem;
   }
+
   .sucursales h2{
     font-size: 1.5rem;
   }
+
   .sucursales p{
     font-size: 1.1rem;
   }
+
   .sucursales iframe{
     width: 500px;
     height: 400px;
   }
+
   .tituloContacto {
     font-size: 2.2rem;
   }
+
   .contacto form label{
     font-size: 1.1rem;
     margin-top: 1rem;
   }
+
   input[type = text] {
     width: 50vh;
-    padding: 3px 15px;
+    padding: 5px 15px;
     margin: 5px 0;
     box-sizing: border-box;
   }
   
   input[type = email] {
     width: 50vh;
-    padding: 3px 15px;
+    padding: 5px 15px;
     margin: 5px 0;
     box-sizing: border-box;
   }
@@ -509,11 +539,86 @@ input[type = email] {
   .mensaje {
     width: 50vh;
   }
+
   .footer {
     font-size: 1.1rem;
   }
 }
 
+/* MENU */
 
+.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
 
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #D5A694;
+  padding-top: 2em;
+  font-size: 28px;
+  font-weight: 700;
+}
 
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 20px;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    font-size: 18px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-group-heading {
+    font-size: 30px;
+  }
+
+  .menu-item-heading {
+    font-size: 22px;
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
