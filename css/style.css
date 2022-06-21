@@ -34,6 +34,7 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
   /* background-color: #CC7351; */
 }
 
