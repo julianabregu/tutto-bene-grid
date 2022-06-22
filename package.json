@@ -1,0 +1,19 @@
+{
+  "name": "pizzeria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianabregu/tutto-bene.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianabregu/tutto-bene/issues"
+  },
+  "homepage": "https://github.com/julianabregu/tutto-bene#readme"
+}

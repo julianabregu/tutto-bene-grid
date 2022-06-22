@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

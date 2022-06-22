@@ -1,0 +1,46 @@
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.hola {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+
+.experiencia {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.botonCentro {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+}
+
+.botonNosotros {
+  text-decoration: none;
+  padding: 8px;
+  border: none;
+  color: $primary-color;
+  border-radius: 4px;
+  outline: none;
+  transition: ease-out 0.3s;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 3px solid $primary-color;
+  position: relative;
+  z-index: 1;
+}

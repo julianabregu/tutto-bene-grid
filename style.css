@@ -26,7 +26,6 @@ a {
 
 .container > * {
   padding: 1.3rem;
-  /* border: 1px solid white; */
 }
 
 .header {
@@ -35,7 +34,6 @@ a {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  /* background-color: #CC7351; */
 }
 
 .header h1 {
@@ -48,7 +46,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* background-color: #E08F62; */
 }
 
 .navbar li {
@@ -71,7 +68,6 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  /* background-color: #E08F62; */
 }
 
 .side h2 {
@@ -101,12 +97,10 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  /* background-color: #E08F62; */
 }
 
 .hola {
   text-transform: uppercase;
-  /* letter-spacing: 0.3rem; */
   font-size: 4rem;
   font-weight: 700;
   margin-top: 5rem;
@@ -264,7 +258,6 @@ input[type = email] {
   font-weight: 400;
   text-align: center;
   padding: 2rem;
-  /* background-color: #DED7B1; */
 }
 
 /* GRIDS */
@@ -291,7 +284,6 @@ input[type = email] {
 
 .container {
   display: grid;
-  /* grid-gap: 10px; */
   min-height: 100vh;
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
