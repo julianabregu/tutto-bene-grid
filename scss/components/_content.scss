@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 11rem;
+  margin-top: 12rem;
   margin-bottom: 8rem;
   text-transform: uppercase;
 }
@@ -44,29 +44,4 @@
   border: 3px solid $yellow-color;
   position: relative;
   z-index: 1;
-  
-  &:hover {
-    color: $dark-brown-color;
-    cursor: pointer;
-  }
-  
-  &:before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: "";
-    background-color: $yellow-color;
-  } 
-  
-  &:hover:before {
-      transition: 0.5s all ease;
-      left: 0;
-      right: 0;
-      opacity: 1;
-      z-index: -1;
-    }
   }

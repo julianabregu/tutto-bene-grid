@@ -11,7 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   background-color: #262D41;
-  background-image: url(../images/background-op.png);
+  background-image: url(../images/bg-prem.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -84,7 +84,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 11rem;
+  margin-top: 12rem;
   margin-bottom: 8rem;
   text-transform: uppercase;
 }
@@ -102,28 +102,6 @@ body {
   border: 3px solid #F1D5A6;
   position: relative;
   z-index: 1;
-}
-.botonNosotros:hover {
-  color: #411500;
-  cursor: pointer;
-}
-.botonNosotros:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: "";
-  background-color: #F1D5A6;
-}
-.botonNosotros:hover:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  z-index: -1;
 }
 
 .side {
@@ -205,14 +183,14 @@ body {
   }
   .hola {
     font-size: 7rem;
-    margin-top: 6rem;
+    margin-top: 7rem;
   }
   .experiencia {
     font-size: 1.7rem;
     margin-top: 1.5rem;
   }
   .botonCentro {
-    margin-top: 13rem;
+    margin-top: 14rem;
   }
   .botonNosotros {
     font-size: 1.5rem;
@@ -251,11 +229,11 @@ body {
   }
   .hola {
     font-size: 9rem;
-    margin-top: 7rem;
+    margin-top: 6rem;
   }
   .experiencia {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .botonCentro {
     margin-top: 15rem;
@@ -263,6 +241,28 @@ body {
   .botonNosotros {
     font-size: 1.75rem;
     padding: 10px;
+  }
+  .botonNosotros:hover {
+    color: #411500;
+    cursor: pointer;
+  }
+  .botonNosotros:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #F1D5A6;
+  }
+  .botonNosotros:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
   }
   .side {
     display: flex;
