@@ -1,0 +1,71 @@
+// ********
+// Tablet
+// ********
+
+@media (min-width: 481px) {
+  
+  .container {
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "content"
+    "sidebar"
+    "footer";
+  }
+
+  .header a h1 {
+    font-size: 2.5rem;
+  }
+
+  .navbar {
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      margin: 0.5rem 1rem;
+
+      a {
+        font-size: 1.49rem;
+      }
+    }
+  }
+}
+
+  .hola {
+    font-size: 7rem;
+    margin-top: 6rem;
+  }
+
+  .experiencia {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+  }
+
+  .botonCentro {
+    margin-top: 13rem;
+  }
+
+  .botonNosotros {
+    font-size: 1.5rem;
+    padding: 9px;
+  }
+
+  .side {
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .footer {
+  font-size: 1rem;
+  }
+}

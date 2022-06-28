@@ -1,0 +1,80 @@
+// *********
+// Desktop
+// *********
+
+@media (min-width: 1024px) {
+  
+  .container {
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "navbar content sidebar"
+    "navbar content sidebar"
+    "footer footer footer";
+  }
+
+  .header a h1 {
+    font-size: 3rem;
+  }
+
+  .navbar {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+      a {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+  .hola {
+  font-size: 9rem;
+  margin-top: 7rem;
+  }
+
+  .experiencia {
+  font-size: 2rem;
+  margin-top: 2rem;
+  }
+
+  .botonCentro {
+    margin-top: 15rem;
+  }
+
+  .botonNosotros {
+    font-size: 1.75rem;
+    padding: 10px;
+  }
+
+  .side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .horarios {
+      margin-top: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.75rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      padding: 0.1rem;
+    }
+  }
+  
+  .footer {
+    font-size: 1.1rem;
+  }
+}

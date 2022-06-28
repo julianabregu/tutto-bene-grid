@@ -7,10 +7,15 @@
 }
 
 body {
-  color: #D5A694;
+  color: #F1D5A6;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   background-color: #262D41;
+  background-image: url(../images/background-op.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .container > * {
@@ -32,6 +37,25 @@ body {
   text-transform: uppercase;
 }
 
+.navbar ul {
+  list-style-type: none;
+}
+.navbar ul li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.navbar ul li a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: all 0.3s ease 0;
+}
+.navbar ul li a:hover {
+  opacity: 0.75;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -42,7 +66,7 @@ body {
 
 .hola {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 4.9rem;
   font-weight: 700;
   margin-top: 5rem;
 }
@@ -50,7 +74,8 @@ body {
 .experiencia {
   font-family: "Satisfy", cursive;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -59,8 +84,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-top: 11rem;
+  margin-bottom: 8rem;
   text-transform: uppercase;
 }
 
@@ -68,33 +93,37 @@ body {
   text-decoration: none;
   padding: 8px;
   border: none;
-  color: #D5A694;
+  color: #F1D5A6;
   border-radius: 4px;
   outline: none;
   transition: ease-out 0.3s;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  border: 3px solid #D5A694;
+  border: 3px solid #F1D5A6;
   position: relative;
   z-index: 1;
 }
-
-.navbar ul {
-  list-style-type: none;
+.botonNosotros:hover {
+  color: #411500;
+  cursor: pointer;
 }
-.navbar ul li {
-  padding: 0.5rem;
+.botonNosotros:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #F1D5A6;
 }
-.navbar ul li a {
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.25rem;
-  transition: all 0.3s ease 0;
-}
-.navbar ul li a:hover {
-  opacity: 0.75;
+.botonNosotros:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
 
 .side {
@@ -103,11 +132,13 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.side .horarios {
+  margin-top: 1rem;
+}
 .side h3 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.25rem;
-  margin-top: 0.5rem;
   text-align: center;
 }
 .side p {
@@ -117,10 +148,10 @@ body {
 }
 
 .footer {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
   text-align: center;
-  padding: 2rem;
+  padding: 1.3rem;
 }
 .footer a {
   color: inherit;
@@ -155,8 +186,8 @@ body {
 
 @media (min-width: 481px) {
   .container {
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "header header" "navbar navbar" "sidebar content" "footer footer";
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas: "header" "navbar" "content" "sidebar" "footer";
   }
   .header a h1 {
     font-size: 2.5rem;
@@ -167,27 +198,31 @@ body {
     justify-content: center;
   }
   .navbar ul li {
-    padding: 0.5rem;
+    margin: 0.5rem 1rem;
   }
   .navbar ul li a {
+    font-size: 1.49rem;
+  }
+  .hola {
+    font-size: 7rem;
+    margin-top: 6rem;
+  }
+  .experiencia {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+  }
+  .botonCentro {
+    margin-top: 13rem;
+  }
+  .botonNosotros {
     font-size: 1.5rem;
+    padding: 9px;
   }
   .side h3 {
     font-size: 1.5rem;
-    margin-top: 1rem;
   }
   .side p {
     font-size: 1rem;
-  }
-  .hola {
-    font-size: 4.7rem;
-  }
-  .experiencia {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-  .botonCentro {
-    margin-top: 6rem;
   }
   .footer {
     font-size: 1rem;
@@ -208,10 +243,26 @@ body {
     justify-content: flex-start;
   }
   .navbar ul li {
-    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .navbar ul li a {
     font-size: 1.75rem;
+  }
+  .hola {
+    font-size: 9rem;
+    margin-top: 7rem;
+  }
+  .experiencia {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .botonCentro {
+    margin-top: 15rem;
+  }
+  .botonNosotros {
+    font-size: 1.75rem;
+    padding: 10px;
   }
   .side {
     display: flex;
@@ -219,63 +270,15 @@ body {
     flex-direction: column;
     justify-content: flex-end;
   }
+  .side .horarios {
+    margin-top: 2rem;
+  }
   .side h3 {
     font-size: 1.75rem;
-    margin-top: 1rem;
   }
   .side p {
     font-size: 1.1rem;
-  }
-  .hola {
-    font-size: 7rem;
-  }
-  .experiencia {
-    font-size: 1.75rem;
-    margin-top: 0.5rem;
-  }
-  .botonCentro {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 9rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-  }
-  .botonNosotros {
-    padding: 10px;
-    border: none;
-    color: #D5A694;
-    border-radius: 4px;
-    outline: none;
-    transition: ease-out 0.3s;
-    font-size: 1.25rem;
-    font-weight: 700;
-    border: 3px solid #D5A694;
-    position: relative;
-    z-index: 1;
-  }
-  .botonNosotros:hover {
-    color: #262D41;
-    cursor: pointer;
-  }
-  .botonNosotros:before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: "";
-    background-color: #D5A694;
-  }
-  .botonNosotros:hover:before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    z-index: -1;
+    padding: 0.1rem;
   }
   .footer {
     font-size: 1.1rem;

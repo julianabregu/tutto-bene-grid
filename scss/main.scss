@@ -1,17 +1,19 @@
 // BASE
-@import "./base/tipografia";
+@import "./base/typography";
 @import "./base/variables";
-@import "./base/generales";
+@import "./base/global";
 
 // COMPONENTS
 @import "./components/header";
-@import "./components/content";
 @import "./components/navbar";
+@import "./components/content";
 @import "./components/aside";
 @import "./components/footer";
 
-// RESPONSIVE
-@import "./responsive/layout"
+// LAYOUT
+@import "./layout/mobile";
+@import "./layout/tablet";
+@import "./layout/desktop";
 
 
 

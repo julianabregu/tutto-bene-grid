@@ -4,11 +4,14 @@
   flex-direction: column;
   justify-content: center;
 
+  .horarios {
+    margin-top: 1rem;
+  }
+
   h3 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.25rem;
-    margin-top: 0.5rem;
     text-align: center;
   }
 

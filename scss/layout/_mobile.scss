@@ -1,0 +1,35 @@
+// ************
+// Smartphone
+// ************
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "header"
+    "navbar"
+    "content"
+    "sidebar"
+    "footer";
+}
