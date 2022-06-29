@@ -1,6 +1,9 @@
+// HELPERS
+@import "./helpers/variables";
+@import "./helpers/mixins.scss";
+
 // BASE
 @import "./base/typography";
-@import "./base/variables";
 @import "./base/global";
 
 // COMPONENTS
@@ -9,6 +12,13 @@
 @import "./components/content";
 @import "./components/aside";
 @import "./components/footer";
+
+// PAGES
+@import "./pages/home.scss";
+@import "./pages/nosotros.scss";
+@import "./pages/menu.scss";
+@import "./pages/sucursales.scss";
+@import "./pages/contacto.scss";
 
 // LAYOUT
 @import "./layout/mobile";

@@ -8,3 +8,17 @@
     color: inherit;
   }
 }
+
+@media (min-width: 481px) {
+
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .footer {
+    font-size: 1.1rem;
+  }
+}

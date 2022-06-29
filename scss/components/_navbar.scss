@@ -22,3 +22,43 @@
     }
   }
 }
+
+@media (min-width: 481px) {
+
+  .navbar {
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      li {
+        margin: 0.5rem 1rem;
+  
+        a {
+          font-size: 1.49rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .navbar {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  
+      li {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  
+        a {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}

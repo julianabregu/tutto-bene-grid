@@ -1,0 +1,62 @@
+.tituloSucursales {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.sucursales h3{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.sucursales p{
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  text-align: justify;  
+}
+
+.sucursales iframe{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  height: 200px;
+}
+
+@media (min-width: 481px) {
+
+  .tituloSucursales {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .sucursales iframe{
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .tituloSucursales {
+    font-size: 2.2rem;
+  }
+
+  .sucursales h3{
+    font-size: 1.5rem;
+  }
+
+  .sucursales p{
+    font-size: 1.1rem;
+  }
+
+  .sucursales iframe{
+    width: 500px;
+    height: 400px;
+  }
+}

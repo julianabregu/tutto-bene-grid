@@ -6,42 +6,12 @@
   flex: 1;
 }
 
-.hola {
-  text-transform: uppercase;
-  font-size: 4.9rem;
-  font-weight: 700;
-  margin-top: 5rem;
+@media (min-width: 481px) {
+
+
 }
 
-.experiencia {
-  font-family: 'Satisfy', cursive;
-  font-weight: 400;
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  text-align: center;
-}
+@media (min-width: 1024px) {
+  
 
-.botonCentro {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 12rem;
-  margin-bottom: 8rem;
-  text-transform: uppercase;
 }
-
-.botonNosotros {
-  text-decoration: none;
-  padding: 8px;
-  border: none;
-  color: $yellow-color;
-  border-radius: 4px;
-  outline: none;
-  transition: ease-out 0.3s;
-  font-size: 1.25rem;
-  font-weight: 700;
-  border: 3px solid $yellow-color;
-  position: relative;
-  z-index: 1;
-  }

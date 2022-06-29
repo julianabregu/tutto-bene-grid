@@ -1,4 +1,5 @@
 .header {
+
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -12,5 +13,19 @@
       font-weight: 700;
       text-transform: uppercase;
     }
+  }
+}
+
+@media (min-width: 481px) {
+
+  .header a h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .header a h1 {
+    font-size: 3rem;
   }
 }

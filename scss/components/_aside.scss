@@ -21,3 +21,40 @@
     text-align: center;
     }
 }
+
+@media (min-width: 481px) {
+
+  .side {
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .horarios {
+      margin-top: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.75rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      padding: 0.1rem;
+    }
+  }
+}

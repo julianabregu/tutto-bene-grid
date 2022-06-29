@@ -5,7 +5,7 @@
 }
 
 body {
-  color: #F1D5A6;
+  color: $yellow-color;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   background-color: $blue-color;
@@ -17,6 +17,11 @@ body {
 }
 
 .container > * {
+  padding: 1.3rem;
+  // border: 1px solid white;
+}
+
+.containerDos > * {
   padding: 1.3rem;
   // border: 1px solid white;
 }

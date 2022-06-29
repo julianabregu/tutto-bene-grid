@@ -33,3 +33,15 @@
     "sidebar"
     "footer";
 }
+
+.containerDos {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "header"
+    "navbar"
+    "content"
+    "footer";
+}
+

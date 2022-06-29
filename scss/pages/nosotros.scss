@@ -1,0 +1,39 @@
+.tituloHistoria {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.textoHistoria {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;  
+}
+
+.imagenRestaurante {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 481px) {
+
+  .tituloHistoria {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .tituloHistoria {
+    font-size: 2.2rem;
+    margin-top: 4rem;
+  }
+
+  .textoHistoria {
+    font-size: 1.1rem;
+  }
+}
