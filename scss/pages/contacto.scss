@@ -6,41 +6,52 @@
 }
 
 .tituloContacto {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
 .contacto form label{
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   display: flex;
   margin-top: 0.5rem;
   text-align: center;
 }
 
-.submitBtn{
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 0.5rem;
-  text-transform: uppercase;
+// ********
+// EXTEND
+// ********
+.botonEnviar {
+  @extend .botonUno;
   font-size: 1rem;
-  font-weight: 700;
-  background: #D5A694;
-  color: #262D41;
-  cursor: pointer;
-  transition: all 0.5s;
-  border-style: none;
-  border-radius: 0.2rem;
-  font-family: 'Poppins', sans-serif;
+  padding: 0.4rem 0.6rem;
+  margin-top: 1rem;
 }
 
-.submitBtn:hover {
-  background-color: #D5A694;
-  opacity: .75;
-}
+
+// .submitBtn{
+//   margin-left: 1rem;
+//   margin-top: 1rem;
+//   margin-bottom: 1rem;
+//   padding: 0.5rem 0.5rem;
+//   text-transform: uppercase;
+//   font-size: 1rem;
+//   font-weight: 700;
+//   background: #D5A694;
+//   color: #262D41;
+//   cursor: pointer;
+//   transition: all 0.5s;
+//   border-style: none;
+//   border-radius: 0.2rem;
+//   font-family: 'Poppins', sans-serif;
+// }
+
+// .submitBtn:hover {
+//   background-color: #D5A694;
+//   opacity: .75;
+// }
 
 input[type = text] {
   width: 100%;
@@ -63,8 +74,8 @@ input[type = email] {
 @media (min-width: 481px) {
 
   .tituloContacto {
-    font-size: 2rem;
-    margin-top: 0rem;
+    font-size: 3rem;
+      margin-top: 4rem;
   }
 
   .contacto form label{
@@ -94,11 +105,13 @@ input[type = email] {
 @media (min-width: 1024px) {
 
   .tituloContacto {
-    font-size: 2.2rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
   }
 
   .contacto form label{
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-top: 1rem;
   }
 

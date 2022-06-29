@@ -1,8 +1,6 @@
 .side {
-  display: flex;
-  align-items: center;
+  @include center;
   flex-direction: column;
-  justify-content: center;
 
   .horarios {
     margin-top: 1rem;
@@ -16,7 +14,7 @@
   }
 
   p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1rem;
     text-align: center;
     }

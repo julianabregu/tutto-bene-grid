@@ -1,7 +1,6 @@
 .header {
 
-  display: flex;
-  justify-content: center;
+  @include center;
   cursor: pointer;
 
   a {

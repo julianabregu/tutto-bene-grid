@@ -2,25 +2,108 @@
 // Color Variables
 // *****************
 
-// Pink
-$pink-color: #D5A694;
+$primary: #D5A694;
+$secondary: #262D41;
+$blue: #1919e6;
+$pastel:#ffe5d9;
+$red: #e61919;
+$yellow: #e6e619;
+$green: #19e635;
+$orange: #ffa600;
+$purple: #9900ff;
+$gray: #808080;
+$black: #000;
+$white: #FFF;
 
-// Pastel
-$pastel-color:#ffe5d9;
+$lighten: 5;
+$darken: 25;
 
-// Blue
-$blue-color: #262D41;
 
-// Black
-$black-color: #000000;
+// ******
+// MAPS
+// ******
 
-// White
-$white-color: #ffffff;
+// Color Palette
 
-//Brown
-$brown-color: #B7855B;
-$dark-brown-color: #411500;
+$colors: (
+  primary: (
+    base: $primary,
+    light: lighten($primary, $lighten),
+    dark: darken($primary, $darken),
+  ),
+  secondary: (
+    base: $secondary,
+    light: lighten($secondary, $lighten),
+    dark: darken($secondary, $darken),
+  ),
+  blue: (
+    base: $blue,
+    light: lighten($blue, $lighten),
+    dark: darken($blue, $darken),
+  ),
+  pastel: (
+    base: $pastel,
+    light: lighten($pastel, $lighten),
+    dark: darken($pastel, $darken),
+  ),
+  red: (
+    base: $red,
+    light: lighten($red, $lighten),
+    dark: darken($red, $darken),
+  ),
+  yellow: (
+    base: $yellow,
+    light: lighten($yellow, $lighten),
+    dark: darken($yellow, $darken),
+  ),
+  green: (
+    base: $green,
+    light: lighten($green, $lighten),
+    dark: darken($green, $darken),
+  ),
+  orange: (
+    base: $orange,
+    light: lighten($orange, $lighten),
+    dark: darken($orange, $darken),
+  ),
+  purple: (
+    base: $purple,
+    light: lighten($purple, $lighten),
+    dark: darken($purple, $darken),
+  ),
+  gray: (
+    base: $gray,
+    light: lighten($gray, $lighten),
+    dark: darken($gray, $darken),
+  ),
+  black: (
+    base: $black,
+    light: lighten($black, $lighten),
+    dark: darken($black, $darken),
+  ),
+  white: (
+    base: $white,
+    light: lighten($white, $lighten),
+    dark: darken($white, $darken),
+  ),
+);
 
-//Yellow
-$yellow-color: #F1D5A6;
+// MAP GET
+
+@function clr($base, $shade: base) {
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}
+
+body {
+  color: clr(primary, );
+  background-color: clr(secondary, );
+}
+
+
+
+
+
+
+
 

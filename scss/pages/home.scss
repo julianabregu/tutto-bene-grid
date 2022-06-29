@@ -1,38 +1,31 @@
 .hola {
   text-transform: uppercase;
-  font-size: 4.9rem;
-  font-weight: 700;
+  @include font (4.9rem, 700);
   margin-top: 5rem;
 }
 
 .experiencia {
   font-family: 'Satisfy', cursive;
-  font-weight: 400;
-  font-size: 1.4rem;
+  @include font-centered (1.4rem, 400, center);
   margin-top: 1rem;
-  text-align: center;
 }
 
 .botonCentro {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-top: 12rem;
   margin-bottom: 8rem;
-  text-transform: uppercase;
 }
 
 .botonUno {
+  text-transform: uppercase;
   text-decoration: none;
   padding: 8px;
   border: none;
-  color: $yellow-color;
+  color: $primary;
   outline: none;
   transition: ease-out 0.3s;
   font-size: 1.25rem;
   font-weight: 700;
-  border: 3px solid $yellow-color;
+  border: 3px solid $primary;
   position: relative;
   z-index: 1;
   }
@@ -80,7 +73,7 @@
       padding: 10px;
   
       &:hover {
-        color: $dark-brown-color;
+        color: $secondary;
         cursor: pointer;
       }
       
@@ -93,7 +86,7 @@
         bottom: 0;
         opacity: 0;
         content: "";
-        background-color: $yellow-color;
+        background-color: $primary;
       } 
       
       &:hover:before {

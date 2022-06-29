@@ -1,39 +1,85 @@
-.tituloHistoria {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+// SECCION NUEVA
+.contentDos {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: $secondary;
 }
 
-.textoHistoria {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: justify;  
+.row {
+  width: 100%;
 }
 
-.imagenRestaurante {
+.imageSection {
+  width: 100%;
+  float: none;
+}
+
+.imageSection img {
   width: 100%;
   height: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+}
+
+.contenido {
+  width: 100%;
+  float: none;
+  margin-left: 0px;
+}
+
+.contenido h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
+}
+
+.contenido p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 @media (min-width: 481px) {
 
-  .tituloHistoria {
-    font-size: 2rem;
-    margin-top: 0.5rem;
+  .imageSection {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenido h2 {
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+  
+  .contenido p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
 
-  .tituloHistoria {
-    font-size: 2.2rem;
-    margin-top: 4rem;
+  .imageSection {
+    width: 30%;
+    float: left;
+    margin-top: 2rem;
   }
 
-  .textoHistoria {
-    font-size: 1.1rem;
+  .contenido {
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+  }
+
+  .contenido h2 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+  }
+  
+  .contenido p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
   }
 }

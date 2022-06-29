@@ -1,7 +1,7 @@
 .tituloSucursales {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -15,7 +15,7 @@
 .sucursales p{
   padding: 0.5rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 0.5rem;
   text-align: justify;  
 }
@@ -24,39 +24,82 @@
   margin-top: 1rem;
   margin-left: 0.5rem;
   margin-bottom: 2rem;
-  width: 300px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
 }
+
+@media (min-width: 320px) {
+
+  .sucursales iframe{
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 375px) {
+
+  .sucursales iframe{
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 414px) {
+
+  .sucursales iframe{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 428px) {
+
+  .sucursales iframe{
+    width: 370px;
+    height: 370px;
+  }
+}
+
 
 @media (min-width: 481px) {
 
   .tituloSucursales {
-    font-size: 2rem;
-    margin-top: 4rem;
+      font-size: 3rem;
+      margin-top: 4rem;
   }
   
   .sucursales iframe{
     width: 400px;
-    height: 300px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 600px) {
+
+  .sucursales iframe{
+    width: 420px;
+    height: 420px;
   }
 }
 
 @media (min-width: 1024px) {
 
   .tituloSucursales {
-    font-size: 2.2rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
   }
 
   .sucursales h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .sucursales p{
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .sucursales iframe{
-    width: 500px;
-    height: 400px;
+    width: 650px;
+    height: 500px;
   }
 }

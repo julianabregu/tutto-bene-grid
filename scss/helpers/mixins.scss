@@ -1,0 +1,20 @@
+// ********
+// MIXINS
+// ********
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font ($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin font-centered ($font-size, $font-weight, $text-align) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-align: $text-align;
+}

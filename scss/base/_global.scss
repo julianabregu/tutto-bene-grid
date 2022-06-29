@@ -5,15 +5,17 @@
 }
 
 body {
-  color: $yellow-color;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  background-color: $blue-color;
-  background-image: url(../images/bg-prem.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+
+  //*******************
+  // BACKGROUND IMAGE
+  //*******************
+  // background-image: url(../images/bg-prem.jpg);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-size: cover;
 }
 
 .container > * {

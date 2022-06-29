@@ -1,17 +1,5 @@
 .content {
-  display: flex;
-  align-items: center;
+  @include center;
   flex-direction: column;
-  justify-content: center;
   flex: 1;
-}
-
-@media (min-width: 481px) {
-
-
-}
-
-@media (min-width: 1024px) {
-  
-
 }

@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+body {
+  color: #D5A694;
+  background-color: #262D41;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +12,8 @@
 }
 
 body {
-  color: #F1D5A6;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  background-color: #262D41;
-  background-image: url(../images/bg-prem.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .container > * {
@@ -29,6 +27,7 @@ body {
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .header a {
@@ -99,17 +98,17 @@ body {
 }
 .content {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   flex: 1;
 }
 
 .side {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 .side .horarios {
   margin-top: 1rem;
@@ -121,7 +120,7 @@ body {
   text-align: center;
 }
 .side p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
   text-align: center;
 }
@@ -154,7 +153,7 @@ body {
 }
 .footer {
   font-size: 0.95rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   padding: 1.3rem;
 }
@@ -181,32 +180,28 @@ body {
 
 .experiencia {
   font-family: "Satisfy", cursive;
-  font-weight: 400;
   font-size: 1.4rem;
-  margin-top: 1rem;
+  font-weight: 400;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .botonCentro {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-top: 12rem;
   margin-bottom: 8rem;
-  text-transform: uppercase;
 }
 
-.botonUno {
+.botonUno, .botonEnviar {
+  text-transform: uppercase;
   text-decoration: none;
   padding: 8px;
   border: none;
-  color: #F1D5A6;
+  color: #D5A694;
   outline: none;
   transition: ease-out 0.3s;
   font-size: 1.25rem;
   font-weight: 700;
-  border: 3px solid #F1D5A6;
+  border: 3px solid #D5A694;
   position: relative;
   z-index: 1;
 }
@@ -223,7 +218,7 @@ body {
   .botonCentro {
     margin-top: 14rem;
   }
-  .botonUno {
+  .botonUno, .botonEnviar {
     font-size: 1.25rem;
     padding: 9px;
   }
@@ -240,15 +235,15 @@ body {
   .botonCentro {
     margin-top: 15rem;
   }
-  .botonUno {
+  .botonUno, .botonEnviar {
     font-size: 1.5rem;
     padding: 10px;
   }
-  .botonUno:hover {
-    color: #411500;
+  .botonUno:hover, .botonEnviar:hover {
+    color: #262D41;
     cursor: pointer;
   }
-  .botonUno:before {
+  .botonUno:before, .botonEnviar:before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -257,9 +252,9 @@ body {
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: #F1D5A6;
+    background-color: #D5A694;
   }
-  .botonUno:hover:before {
+  .botonUno:hover:before, .botonEnviar:hover:before {
     transition: 0.5s all ease;
     left: 0;
     right: 0;
@@ -267,44 +262,91 @@ body {
     z-index: -1;
   }
 }
-.tituloHistoria {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+.contentDos {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #262D41;
 }
 
-.textoHistoria {
+.row {
+  width: 100%;
+}
+
+.imageSection {
+  width: 100%;
+  float: none;
+}
+
+.imageSection img {
+  width: 100%;
+  height: auto;
+}
+
+.contenido {
+  width: 100%;
+  float: none;
+  margin-left: 0px;
+}
+
+.contenido h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
+}
+
+.contenido p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
+  margin-top: 1rem;
+  line-height: 1.6;
   text-align: justify;
 }
 
-.imagenRestaurante {
-  width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 @media (min-width: 481px) {
-  .tituloHistoria {
-    font-size: 2rem;
-    margin-top: 0.5rem;
+  .imageSection {
+    width: 100%;
+    height: auto;
+  }
+  .contenido h2 {
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+  .contenido p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
   }
 }
 @media (min-width: 1024px) {
-  .tituloHistoria {
-    font-size: 2.2rem;
-    margin-top: 4rem;
+  .imageSection {
+    width: 30%;
+    float: left;
+    margin-top: 2rem;
   }
-  .textoHistoria {
-    font-size: 1.1rem;
+  .contenido {
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+  }
+  .contenido h2 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+  }
+  .contenido p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
   }
 }
 .menu {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
+}
+
+.menu h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
 }
 
 .menu-group-heading {
@@ -312,7 +354,7 @@ body {
   margin-top: 5rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #D5A694;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
@@ -343,30 +385,54 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .menu-item-name {
-  margin-right: 1.5em;
+  margin-right: 1.5rem;
 }
 
 .menu-item-description {
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 300;
 }
 
+@media (min-width: 481px) {
+  .menu {
+    font-size: 1.1rem;
+  }
+  .menu h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+  .menu-group-heading {
+    font-size: 2rem;
+  }
+  .menu-item-heading {
+    font-size: 1.25rem;
+  }
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
 @media (min-width: 1024px) {
   .menu {
-    font-size: 18px;
+    font-size: 1.25rem;
+    padding-right: 3rem;
+  }
+  .menu h2 {
+    font-size: 4rem;
+    letter-spacing: 3px;
   }
   .menu-group {
     grid-template-columns: repeat(2, 1fr);
   }
   .menu-group-heading {
-    font-size: 30px;
+    font-size: 2.5rem;
   }
   .menu-item-heading {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
   .menu-item-image {
     width: 125px;
@@ -374,9 +440,9 @@ body {
   }
 }
 .tituloSucursales {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -390,7 +456,7 @@ body {
 .sucursales p {
   padding: 0.5rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 0.5rem;
   text-align: justify;
 }
@@ -399,33 +465,65 @@ body {
   margin-top: 1rem;
   margin-left: 0.5rem;
   margin-bottom: 2rem;
-  width: 300px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
 }
 
+@media (min-width: 320px) {
+  .sucursales iframe {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (min-width: 375px) {
+  .sucursales iframe {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 414px) {
+  .sucursales iframe {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (min-width: 428px) {
+  .sucursales iframe {
+    width: 370px;
+    height: 370px;
+  }
+}
 @media (min-width: 481px) {
   .tituloSucursales {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 4rem;
   }
   .sucursales iframe {
     width: 400px;
-    height: 300px;
+    height: 400px;
+  }
+}
+@media (min-width: 600px) {
+  .sucursales iframe {
+    width: 420px;
+    height: 420px;
   }
 }
 @media (min-width: 1024px) {
   .tituloSucursales {
-    font-size: 2.2rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
   }
   .sucursales h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .sucursales p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
   .sucursales iframe {
-    width: 500px;
-    height: 400px;
+    width: 650px;
+    height: 500px;
   }
 }
 .contacto {
@@ -436,40 +534,24 @@ body {
 }
 
 .tituloContacto {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
 .contacto form label {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   display: flex;
   margin-top: 0.5rem;
   text-align: center;
 }
 
-.submitBtn {
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 0.5rem;
-  text-transform: uppercase;
+.botonEnviar {
   font-size: 1rem;
-  font-weight: 700;
-  background: #D5A694;
-  color: #262D41;
-  cursor: pointer;
-  transition: all 0.5s;
-  border-style: none;
-  border-radius: 0.2rem;
-  font-family: "Poppins", sans-serif;
-}
-
-.submitBtn:hover {
-  background-color: #D5A694;
-  opacity: 0.75;
+  padding: 0.4rem 0.6rem;
+  margin-top: 1rem;
 }
 
 input[type=text] {
@@ -492,8 +574,8 @@ input[type=email] {
 
 @media (min-width: 481px) {
   .tituloContacto {
-    font-size: 2rem;
-    margin-top: 0rem;
+    font-size: 3rem;
+    margin-top: 4rem;
   }
   .contacto form label {
     margin-top: 0.75em;
@@ -517,10 +599,12 @@ input[type=email] {
 }
 @media (min-width: 1024px) {
   .tituloContacto {
-    font-size: 2.2rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
   }
   .contacto form label {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-top: 1rem;
   }
   input[type=text] {
@@ -551,6 +635,10 @@ input[type=email] {
   grid-area: content;
 }
 
+.contentDos {
+  grid-area: contentDos;
+}
+
 .navbar {
   grid-area: navbar;
 }
@@ -574,7 +662,7 @@ input[type=email] {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto auto 1fr;
-  grid-template-areas: "header" "navbar" "content" "footer";
+  grid-template-areas: "header" "navbar" "contentDos" "footer";
 }
 
 @media (min-width: 481px) {
@@ -584,7 +672,7 @@ input[type=email] {
   }
   .containerDos {
     grid-template-columns: 1fr auto auto;
-    grid-template-areas: "header" "navbar" "content" "footer";
+    grid-template-areas: "header" "navbar" "contentDos" "footer";
   }
 }
 @media (min-width: 1024px) {
@@ -596,7 +684,7 @@ input[type=email] {
   .containerDos {
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: "header header" "navbar content" "navbar content" "footer footer";
+    grid-template-areas: "header header" "navbar contentDos" "navbar contentDos" "footer footer";
   }
 }
 

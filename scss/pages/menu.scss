@@ -1,14 +1,20 @@
 .menu {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
+}
+
+.menu h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 3rem;
 }
 
 .menu-group-heading {
   margin: 0;
   margin-top: 5rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #D5A694;
-  font-size: 28px;
+  border-bottom: 2px solid $primary;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
@@ -39,22 +45,52 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .menu-item-name {
-  margin-right: 1.5em;
+  margin-right: 1.5rem;
 }
 
 .menu-item-description {
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+@media (min-width: 481px) {
+  .menu {
+    font-size: 1.1rem;
+  }
+
+  .menu h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+
+  .menu-group-heading {
+    font-size: 2rem;
+  }
+
+  .menu-item-heading {
+    font-size: 1.25rem;
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
 }
 
 
 @media (min-width: 1024px) {
   .menu {
-    font-size: 18px;
+    font-size: 1.25rem;
+    padding-right: 3rem;
+  }
+
+  .menu h2 {
+    font-size: 4rem;
+    letter-spacing: 3px;
   }
 
   .menu-group {
@@ -62,11 +98,11 @@
   }
 
   .menu-group-heading {
-    font-size: 30px;
+    font-size: 2.5rem;
   }
 
   .menu-item-heading {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 
   .menu-item-image {
