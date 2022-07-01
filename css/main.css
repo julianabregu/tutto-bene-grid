@@ -619,10 +619,6 @@ input[type=email] {
     margin: 5px 0;
     box-sizing: border-box;
   }
-  .submitBtn {
-    margin-top: 1rem;
-    padding: 0.75rem 0.75rem;
-  }
   .mensaje {
     width: 50vh;
   }

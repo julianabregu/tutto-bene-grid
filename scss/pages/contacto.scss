@@ -30,29 +30,6 @@
   margin-top: 1rem;
 }
 
-
-// .submitBtn{
-//   margin-left: 1rem;
-//   margin-top: 1rem;
-//   margin-bottom: 1rem;
-//   padding: 0.5rem 0.5rem;
-//   text-transform: uppercase;
-//   font-size: 1rem;
-//   font-weight: 700;
-//   background: #D5A694;
-//   color: #262D41;
-//   cursor: pointer;
-//   transition: all 0.5s;
-//   border-style: none;
-//   border-radius: 0.2rem;
-//   font-family: 'Poppins', sans-serif;
-// }
-
-// .submitBtn:hover {
-//   background-color: #D5A694;
-//   opacity: .75;
-// }
-
 input[type = text] {
   width: 100%;
   padding: 3px 15px;
@@ -127,11 +104,6 @@ input[type = email] {
     padding: 5px 15px;
     margin: 5px 0;
     box-sizing: border-box;
-  }
-  
-  .submitBtn{
-    margin-top: 1rem;
-    padding: 0.75rem 0.75rem;
   }
 
   .mensaje {
