@@ -5,22 +5,12 @@
 @media (min-width: 1024px) {
   
   .container {
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns:1fr 4fr 1fr;
     grid-template-areas: 
     "header header header"
     "navbar content sidebar"
     "navbar content sidebar"
     "footer footer footer";
-  }
-
-  .containerDos {
-    grid-template-rows: auto 1fr;
-    grid-template-columns:1fr 4fr;
-    grid-template-areas: 
-    "header header"
-    "navbar contentDos"
-    "navbar contentDos"
-    "footer footer";
   }
 }

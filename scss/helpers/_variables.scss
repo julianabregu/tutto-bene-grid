@@ -10,8 +10,10 @@ $red: #e61919;
 $yellow: #e6e619;
 $green: #19e635;
 $orange: #ffa600;
+$brown: #964B00;
 $purple: #9900ff;
 $gray: #808080;
+$tiza: #F2F2F0;
 $black: #000;
 $white: #FFF;
 
@@ -66,6 +68,11 @@ $colors: (
     light: lighten($orange, $lighten),
     dark: darken($orange, $darken),
   ),
+  brown: (
+    base: $brown,
+    light: lighten($brown, $lighten),
+    dark: darken($brown, $darken),
+  ),
   purple: (
     base: $purple,
     light: lighten($purple, $lighten),
@@ -75,6 +82,11 @@ $colors: (
     base: $gray,
     light: lighten($gray, $lighten),
     dark: darken($gray, $darken),
+  ),
+  tiza: (
+    base: $tiza,
+    light: lighten($tiza, $lighten),
+    dark: darken($tiza, $darken),
   ),
   black: (
     base: $black,
@@ -97,7 +109,7 @@ $colors: (
 
 body {
   color: clr(primary, );
-  background-color: clr(secondary, );
+  background-color: clr(gray, );
 }
 
 

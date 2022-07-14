@@ -1,6 +1,7 @@
 .side {
   @include center;
   flex-direction: column;
+  padding-bottom: 1rem;
 
   .horarios {
     margin-top: 1rem;
