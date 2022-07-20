@@ -57,10 +57,13 @@ body {
 }
 .navbar ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  float: left;
 }
 .navbar ul li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 .navbar ul li a {
   color: inherit;
@@ -78,6 +81,7 @@ body {
   .navbar ul {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
   }
   .navbar ul li {
@@ -129,6 +133,9 @@ body {
   align-items: center;
   flex-direction: column;
   padding-bottom: 1rem;
+}
+.side .happy {
+  margin-top: 4rem;
 }
 .side .horarios {
   margin-top: 1rem;
@@ -184,7 +191,7 @@ body {
 }
 
 .fa-brands {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 28px;
   padding: 0.3rem;
   margin-bottom: 1rem;
@@ -218,7 +225,7 @@ body {
   text-transform: uppercase;
   font-size: 4.9rem;
   font-weight: 700;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .experiencia {
@@ -230,8 +237,8 @@ body {
 }
 
 .botonCentro {
-  margin-top: 12rem;
-  margin-bottom: 8rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 
 .botonUno, .botonEnviar {
@@ -317,6 +324,7 @@ body {
   width: 100%;
   height: auto;
   border: solid 3px #006e72;
+  margin-top: 4rem;
 }
 
 .contenido {
@@ -622,6 +630,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.happy-sucursal {
+  margin-top: 2rem;
+}
+
 .sucursales h3 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -718,6 +730,10 @@ body {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+.happy-contacto {
+  margin-top: 4rem;
 }
 
 .contacto {
