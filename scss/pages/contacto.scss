@@ -1,9 +1,4 @@
-.contacto {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+// MOBILE
 
 .tituloContacto {
   font-size: 2rem;
@@ -12,22 +7,28 @@
   margin-bottom: 1rem;
 }
 
-.contacto form label{
-  font-size: 1rem;
-  font-weight: 300;
-  display: flex;
-  margin-top: 0.5rem;
-  text-align: center;
+.dudas {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-// ********
-// EXTEND
-// ********
-.botonEnviar {
-  @extend .botonUno;
-  font-size: 1rem;
-  padding: 0.4rem 0.6rem;
-  margin-top: 1rem;
+.contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  form label{
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
 }
 
 input[type = text] {
@@ -44,15 +45,34 @@ input[type = email] {
   box-sizing: border-box;
 }
 
+// ********
+// EXTEND
+// ********
+
+.botonEnviar {
+  @extend .botonUno;
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  margin-top: 1rem;
+}
+
 .mensaje {
   width: 100%;
 }
+
+// TABLET
 
 @media (min-width: 481px) {
 
   .tituloContacto {
     font-size: 3rem;
-      margin-top: 4rem;
+    margin-top: 4rem;
+  }
+
+  .dudas {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .contacto form label{
@@ -79,12 +99,20 @@ input[type = email] {
   }
 }
 
+// DESKTOP
+
 @media (min-width: 1024px) {
 
   .tituloContacto {
     font-size: 4rem;
     letter-spacing: 2px;
     margin-top: 3rem;
+  }
+
+  .dudas {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .contacto form label{

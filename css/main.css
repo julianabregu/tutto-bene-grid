@@ -138,6 +138,7 @@ body {
   font-weight: 700;
   font-size: 1.25rem;
   text-align: center;
+  color: #006e72;
 }
 .side p {
   font-weight: 300;
@@ -176,19 +177,41 @@ body {
   font-weight: 300;
   text-align: center;
   padding: 1.3rem;
+  color: #FFF;
 }
 .footer a {
-  color: inherit;
+  color: #FFF;
+}
+
+.fa-brands {
+  margin-top: 2rem;
+  font-size: 28px;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  color: #FFF;
 }
 
 @media (min-width: 481px) {
   .footer {
     font-size: 1rem;
   }
+  .fa-brands {
+    margin-top: 3rem;
+    font-size: 32px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
 }
 @media (min-width: 1024px) {
   .footer {
     font-size: 1.1rem;
+  }
+  .fa-brands {
+    margin-top: 8rem;
+    font-size: 34px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 .hola {
@@ -290,7 +313,6 @@ body {
   width: 100%;
   float: none;
 }
-
 .imageSection img {
   width: 100%;
   height: auto;
@@ -302,13 +324,11 @@ body {
   float: none;
   margin-left: 0px;
 }
-
 .contenido h2 {
   font-size: 2rem;
   letter-spacing: 1px;
   margin-top: 2rem;
 }
-
 .contenido p {
   font-size: 1rem;
   font-weight: 300;
@@ -322,7 +342,6 @@ body {
   width: 100%;
   float: none;
 }
-
 .imageSectionDos img {
   width: 100%;
   height: auto;
@@ -334,13 +353,11 @@ body {
   float: none;
   margin-left: 0px;
 }
-
 .contenidoDos h2 {
   font-size: 2rem;
   letter-spacing: 1px;
   margin-top: 2rem;
 }
-
 .contenidoDos p {
   font-size: 1rem;
   font-weight: 300;
@@ -497,7 +514,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
-
 .menu h2 {
   font-size: 2rem;
   letter-spacing: 1px;
@@ -511,7 +527,7 @@ body {
   margin-bottom: 1rem;
   border-bottom: 2px solid #006e72;
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .menu-group {
@@ -552,6 +568,9 @@ body {
 .menu-item-description {
   line-height: 1.6;
   font-weight: 300;
+}
+.menu-item-description li {
+  list-style: none;
 }
 
 @media (min-width: 481px) {
@@ -604,13 +623,12 @@ body {
 }
 
 .sucursales h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-top: 1rem;
   margin-left: 0.5rem;
   border-bottom: 2px solid #006e72;
 }
-
 .sucursales p {
   padding: 0.5rem;
   font-size: 1rem;
@@ -618,7 +636,6 @@ body {
   margin-top: 0.5rem;
   text-align: justify;
 }
-
 .sucursales iframe {
   margin-top: 1rem;
   margin-left: 0.5rem;
@@ -656,6 +673,9 @@ body {
     font-size: 3rem;
     margin-top: 4rem;
   }
+  .sucursales h3 {
+    font-size: 1.75rem;
+  }
   .sucursales iframe {
     width: 400px;
     height: 400px;
@@ -684,13 +704,6 @@ body {
     height: 500px;
   }
 }
-.contacto {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .tituloContacto {
   font-size: 2rem;
   letter-spacing: 1px;
@@ -698,18 +711,27 @@ body {
   margin-bottom: 1rem;
 }
 
+.dudas {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 .contacto form label {
   font-size: 1rem;
   font-weight: 300;
   display: flex;
   margin-top: 0.5rem;
   text-align: center;
-}
-
-.botonEnviar {
-  font-size: 1rem;
-  padding: 0.4rem 0.6rem;
-  margin-top: 1rem;
 }
 
 input[type=text] {
@@ -726,6 +748,12 @@ input[type=email] {
   box-sizing: border-box;
 }
 
+.botonEnviar {
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  margin-top: 1rem;
+}
+
 .mensaje {
   width: 100%;
 }
@@ -734,6 +762,11 @@ input[type=email] {
   .tituloContacto {
     font-size: 3rem;
     margin-top: 4rem;
+  }
+  .dudas {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   .contacto form label {
     margin-top: 0.75em;
@@ -760,6 +793,11 @@ input[type=email] {
     font-size: 4rem;
     letter-spacing: 2px;
     margin-top: 3rem;
+  }
+  .dudas {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   .contacto form label {
     font-size: 1.25rem;

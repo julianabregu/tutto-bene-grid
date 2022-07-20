@@ -2,22 +2,13 @@
 // Color Variables
 // *****************
 
-$primary: #D5A694;
-$secondary: #262D41;
+$primary: #006e72;
+$secondary: #41454e;
 $pastel:#ffe5d9;
 $pastel-orange: #db967b;
-$red: #e61919;
-$verde-agua: #006e72;
 $green-1: #26643b;
 $green-2: #a2de96;
-$light-green-1: #d6e5d8;
-$light-green-2: #f5fcf4;
-$gray: #41454e;
-$tiza: #F2F2F0;
-$black-1: #000;
-$black-2: #3b413a;
-$black-3: #3f3c3c;
-$black-4: #5b6359;
+$black: #000;
 $white: #FFF;
 
 $lighten: 5;
@@ -51,16 +42,6 @@ $colors: (
     light: lighten($pastel-orange, $lighten),
     dark: darken($pastel-orange, $darken),
   ),
-  red: (
-    base: $red,
-    light: lighten($red, $lighten),
-    dark: darken($red, $darken),
-  ),
-  verde-agua: (
-    base: $verde-agua,
-    light: lighten($verde-agua, $lighten),
-    dark: darken($verde-agua, $darken),
-  ),
   green-1: (
     base: $green-1,
     light: lighten($green-1, $lighten),
@@ -71,45 +52,10 @@ $colors: (
     light: lighten($green-2, $lighten),
     dark: darken($green-2, $darken),
   ),
-  light-green-1: (
-    base: $light-green-1,
-    light: lighten($light-green-1, $lighten),
-    dark: darken($light-green-1, $darken),
-  ),
-  light-green-2: (
-    base: $light-green-2,
-    light: lighten($light-green-2, $lighten),
-    dark: darken($light-green-2, $darken),
-  ),
-  gray: (
-    base: $gray,
-    light: lighten($gray, $lighten),
-    dark: darken($gray, $darken),
-  ),
-  tiza: (
-    base: $tiza,
-    light: lighten($tiza, $lighten),
-    dark: darken($tiza, $darken),
-  ),
-  black-1: (
-    base: $black-1,
-    light: lighten($black-1, $lighten),
-    dark: darken($black-1, $darken),
-  ),
-  black-2: (
-    base: $black-2,
-    light: lighten($black-2, $lighten),
-    dark: darken($black-2, $darken),
-  ),
-  black-3: (
-    base: $black-3,
-    light: lighten($black-3, $lighten),
-    dark: darken($black-3, $darken),
-  ),
-  black-4: (
-    base: $black-4,
-    light: lighten($black-4, $lighten),
-    dark: darken($black-4, $darken),
+  black: (
+    base: $black,
+    light: lighten($black, $lighten),
+    dark: darken($black, $darken),
   ),
   white: (
     base: $white,
@@ -127,7 +73,7 @@ $colors: (
 
 body {
   color: clr(white, );
-  background-color: clr(gray, );
+  background-color: clr(secondary, );
 }
 
 

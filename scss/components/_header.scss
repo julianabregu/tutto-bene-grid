@@ -1,3 +1,4 @@
+// MOBILE
 
 .header {
 
@@ -9,7 +10,7 @@
     }
 }
 
-
+// TABLET
 
 @media (min-width: 481px) {
   .header {
@@ -19,6 +20,8 @@
     }
   }
 }
+
+// DESKTOP
 
 @media (min-width: 1024px) {
   .header {

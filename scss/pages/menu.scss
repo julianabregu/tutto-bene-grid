@@ -1,22 +1,24 @@
+// MOBILE
+
 .menu {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-}
 
-.menu h2 {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  margin-top: 3rem;
-  text-align: center;
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    text-align: center;
+  }
 }
 
 .menu-group-heading {
   margin: 0;
   margin-top: 5rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid $verde-agua;
+  border-bottom: 2px solid $primary;
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .menu-group {
@@ -57,16 +59,22 @@
 .menu-item-description {
   line-height: 1.6;
   font-weight: 300;
+
+  li {
+    list-style: none;
+  }
 }
+
+// TABLET
 
 @media (min-width: 481px) {
   .menu {
     font-size: 1.1rem;
-  }
 
-  .menu h2 {
-    font-size: 3rem;
-    letter-spacing: 3px;
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+    }
   }
 
   .menu-group-heading {
@@ -83,16 +91,17 @@
   }
 }
 
+// DESKTOP
 
 @media (min-width: 1024px) {
   .menu {
     font-size: 1.25rem;
     padding-right: 3rem;
-  }
 
-  .menu h2 {
-    font-size: 4rem;
-    letter-spacing: 3px;
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 3px;
+    }
   }
 
   .menu-group {
@@ -111,5 +120,4 @@
     width: 125px;
     height: 125px;
   }
-
 }

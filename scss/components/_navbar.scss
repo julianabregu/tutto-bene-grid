@@ -1,3 +1,5 @@
+// MOBILE
+
 .navbar {
 
   ul {
@@ -23,6 +25,8 @@
   }
 }
 
+// TABLET
+
 @media (min-width: 481px) {
 
   .navbar {
@@ -43,24 +47,27 @@
   }
 }
 
+// DESKTOP
+
 @media (min-width: 1024px) and (max-width: 1535px) {
 
   .navbar {
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 
-    li {
-    margin-top: 0.7rem;
-    margin-bottom: 0.7rem;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
 
-      a {
-        font-size: 1.5rem;
+      li {
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+
+        a {
+          font-size: 1.5rem;
+        }
       }
     }
   }
-}
 }
 
 @media (min-width: 1536px) {
@@ -78,10 +85,9 @@
     
 
         a {
-        font-size: 1.75rem;
+          font-size: 1.75rem;
+        }
       }
     }
   }
-}
-
 }

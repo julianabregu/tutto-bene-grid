@@ -1,24 +1,54 @@
+// MOBILE
+
 .footer {
   font-size: 0.95rem;
   font-weight: 300;
   text-align: center;
   padding: 1.3rem;
+  color: $white;
 
   a {
-    color: inherit;
+    color: $white;
   }
 }
+
+.fa-brands {
+  margin-top: 2rem;
+  font-size: 28px;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  color: $white;
+}
+
+// TABLET
 
 @media (min-width: 481px) {
 
   .footer {
     font-size: 1rem;
   }
+
+  .fa-brands {
+    margin-top: 3rem;
+    font-size: 32px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
 }
+
+// DESKTOP
 
 @media (min-width: 1024px) {
 
   .footer {
     font-size: 1.1rem;
+  }
+
+  .fa-brands {
+    margin-top: 8rem;
+    font-size: 34px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
   }
 }

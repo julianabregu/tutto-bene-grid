@@ -2,72 +2,72 @@
   width: 100%;
 }
 
-// Seccion uno
+// MOBILE
 
 .imageSection {
   width: 100%;
   float: none;
-}
 
-.imageSection img {
-  width: 100%;
-  height: auto;
-  border: solid 3px $verde-agua;
+  img {
+    width: 100%;
+    height: auto;
+    border: solid 3px $primary;
+  }
 }
 
 .contenido {
   width: 100%;
   float: none;
   margin-left: 0px;
-}
 
-.contenido h2 {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  margin-top: 2rem;
-}
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+  }
 
-.contenido p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin-top: 1rem;
-  line-height: 1.6;
-  text-align: justify;
-  margin-bottom: 6rem;
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 6rem;
+  }
 }
-
-// Seccion dos
 
 .imageSectionDos {
   width: 100%;
   float: none;
-}
 
-.imageSectionDos img {
-  width: 100%;
-  height: auto;
-  border: solid 3px $verde-agua;
+  img {
+    width: 100%;
+    height: auto;
+    border: solid 3px $primary;
+  }
 }
 
 .contenidoDos {
   width: 100%;
   float: none;
   margin-left: 0px;
+
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
 }
 
-.contenidoDos h2 {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  margin-top: 2rem;
-}
-
-.contenidoDos p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin-top: 1rem;
-  line-height: 1.6;
-  text-align: justify;
-}
+// TABLET
 
 @media (min-width: 481px) {
 
@@ -75,183 +75,175 @@
     width: 40%;
     float: left;
     margin-top: 2rem;
-  }
 
-  .imageSection img {
-    margin-top: 3rem;
+    img {
+      margin-top: 3rem;
+    }
   }
 
   .contenido {
     width: 50%;
     float: left;
     margin-left: 50px;
-  }
 
-  .contenido h2 {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-top: 3rem;
-  }
-  
-  .contenido p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 10rem;
-  }
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-top: 3rem;
+    }
 
-  // Seccion Dos
+    p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      margin-bottom: 10rem;
+    }
+  }
 
   .imageSectionDos {
     width: 40%;
     float: right;
     margin-top: 2rem;
-  }
 
-  .imageSectionDos img {
-    margin-top: 3rem;
+    img {
+      margin-top: 3rem;
+    }
   }
 
   .contenidoDos {
     width: 50%;
     float: right;
     margin-right: 50px;
-  }
 
-  .contenidoDos h2 {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-top: 3rem;
-  }
-  
-  .contenidoDos p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1535px){
+// DESKTOP
 
-  // Seccion uno
+@media (min-width: 1024px) and (max-width: 1535px){
 
   .imageSection {
     width: 30%;
     float: left;
     margin-top: 2rem;
-  }
 
-  .imageSection img {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    img {
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
   }
 
   .contenido {
     width: 60%;
     float: left;
     margin-left: 50px;
-  }
 
-  .contenido h2 {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-top: 4rem;
-  }
-  
-  .contenido p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 17rem;
-  }
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-top: 4rem;
+    }
 
-  // Seccion dos
+    p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      margin-bottom: 17rem;
+    }
+  }
 
   .imageSectionDos {
     width: 30%;
     float: right;
     margin-top: 2rem;
-  }
 
-  .imageSectionDos img {
-    margin-top: 2rem;
+    img {
+      margin-top: 2rem;
+    }
   }
 
   .contenidoDos {
     width: 60%;
     float: right;
     margin-right: 50px;
-  }
 
-  .contenidoDos h2 {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-top: 4rem;
-  }
-  
-  .contenidoDos p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-top: 4rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
   }
 }
 
 @media (min-width: 1535px){
 
-  // Seccion uno
-
   .imageSection {
     width: 30%;
     float: left;
     margin-top: 2rem;
-  }
 
-  .imageSection img {
-    margin-top: 2rem;
-    margin-left: 1rem;
+    img {
+      margin-top: 2rem;
+      margin-left: 1rem;
+    }
   }
 
   .contenido {
     width: 60%;
     float: left;
     margin-left: 50px;
-  }
 
-  .contenido h2 {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-top: 4rem;
-  }
-  
-  .contenido p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 17rem;
-  }
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-top: 4rem;
+    }
 
-  // Seccion dos
+    p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      margin-bottom: 17rem;
+    }
+  }
 
   .imageSectionDos {
     width: 30%;
     float: right;
     margin-top: 2rem;
     margin-right: 3rem;
-  }
 
-  .imageSectionDos img {
-    margin-top: 2rem;
+    img {
+      margin-top: 2rem;
+    }
   }
 
   .contenidoDos {
     width: 60%;
     float: right;
     margin-right: 50px;
-  }
 
-  .contenidoDos h2 {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-top: 4rem;
-  }
-  
-  .contenidoDos p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-top: 4rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
   }
 }
