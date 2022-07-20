@@ -7,12 +7,31 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  background-image: url("../images/n-n-BtbjCFUvBXs-unsplash.jpg");
+
+
+  background-image: url("../images/background.png");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 481px) {
+  
+  body{
+    background-position: right;
+  
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  body{
+    background-position: left;
+  }
 }
 
 .container > * {
   padding: 1.3rem;
 }
+

@@ -20,12 +20,12 @@
   text-decoration: none;
   padding: 8px;
   border: none;
-  color: $primary;
+  color: $white;
   outline: none;
   transition: ease-out 0.3s;
   font-size: 1.25rem;
   font-weight: 700;
-  border: 3px solid $primary;
+  border: 3px solid $white;
   position: relative;
   z-index: 1;
   }
@@ -73,7 +73,7 @@
       padding: 10px;
   
       &:hover {
-        color: $tiza;
+        color: $gray;
         cursor: pointer;
       }
       
@@ -86,7 +86,7 @@
         bottom: 0;
         opacity: 0;
         content: "";
-        background-color: $primary;
+        background-color: $white;
       } 
       
       &:hover:before {

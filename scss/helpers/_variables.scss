@@ -4,17 +4,20 @@
 
 $primary: #D5A694;
 $secondary: #262D41;
-$blue: #1919e6;
 $pastel:#ffe5d9;
+$pastel-orange: #db967b;
 $red: #e61919;
-$yellow: #e6e619;
-$green: #19e635;
-$orange: #ffa600;
-$brown: #964B00;
-$purple: #9900ff;
-$gray: #808080;
+$verde-agua: #006e72;
+$green-1: #26643b;
+$green-2: #a2de96;
+$light-green-1: #d6e5d8;
+$light-green-2: #f5fcf4;
+$gray: #41454e;
 $tiza: #F2F2F0;
-$black: #000;
+$black-1: #000;
+$black-2: #3b413a;
+$black-3: #3f3c3c;
+$black-4: #5b6359;
 $white: #FFF;
 
 $lighten: 5;
@@ -38,45 +41,45 @@ $colors: (
     light: lighten($secondary, $lighten),
     dark: darken($secondary, $darken),
   ),
-  blue: (
-    base: $blue,
-    light: lighten($blue, $lighten),
-    dark: darken($blue, $darken),
-  ),
   pastel: (
     base: $pastel,
     light: lighten($pastel, $lighten),
     dark: darken($pastel, $darken),
+  ),
+  pastel-orange: (
+    base: $pastel-orange,
+    light: lighten($pastel-orange, $lighten),
+    dark: darken($pastel-orange, $darken),
   ),
   red: (
     base: $red,
     light: lighten($red, $lighten),
     dark: darken($red, $darken),
   ),
-  yellow: (
-    base: $yellow,
-    light: lighten($yellow, $lighten),
-    dark: darken($yellow, $darken),
+  verde-agua: (
+    base: $verde-agua,
+    light: lighten($verde-agua, $lighten),
+    dark: darken($verde-agua, $darken),
   ),
-  green: (
-    base: $green,
-    light: lighten($green, $lighten),
-    dark: darken($green, $darken),
+  green-1: (
+    base: $green-1,
+    light: lighten($green-1, $lighten),
+    dark: darken($green-1, $darken),
   ),
-  orange: (
-    base: $orange,
-    light: lighten($orange, $lighten),
-    dark: darken($orange, $darken),
+  green-2: (
+    base: $green-2,
+    light: lighten($green-2, $lighten),
+    dark: darken($green-2, $darken),
   ),
-  brown: (
-    base: $brown,
-    light: lighten($brown, $lighten),
-    dark: darken($brown, $darken),
+  light-green-1: (
+    base: $light-green-1,
+    light: lighten($light-green-1, $lighten),
+    dark: darken($light-green-1, $darken),
   ),
-  purple: (
-    base: $purple,
-    light: lighten($purple, $lighten),
-    dark: darken($purple, $darken),
+  light-green-2: (
+    base: $light-green-2,
+    light: lighten($light-green-2, $lighten),
+    dark: darken($light-green-2, $darken),
   ),
   gray: (
     base: $gray,
@@ -88,10 +91,25 @@ $colors: (
     light: lighten($tiza, $lighten),
     dark: darken($tiza, $darken),
   ),
-  black: (
-    base: $black,
-    light: lighten($black, $lighten),
-    dark: darken($black, $darken),
+  black-1: (
+    base: $black-1,
+    light: lighten($black-1, $lighten),
+    dark: darken($black-1, $darken),
+  ),
+  black-2: (
+    base: $black-2,
+    light: lighten($black-2, $lighten),
+    dark: darken($black-2, $darken),
+  ),
+  black-3: (
+    base: $black-3,
+    light: lighten($black-3, $lighten),
+    dark: darken($black-3, $darken),
+  ),
+  black-4: (
+    base: $black-4,
+    light: lighten($black-4, $lighten),
+    dark: darken($black-4, $darken),
   ),
   white: (
     base: $white,
@@ -108,7 +126,7 @@ $colors: (
 }
 
 body {
-  color: clr(primary, );
+  color: clr(white, );
   background-color: clr(gray, );
 }
 
