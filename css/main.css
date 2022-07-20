@@ -70,7 +70,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   transition: all 0.3s ease 0;
 }
 .navbar ul li a:hover {
@@ -333,7 +333,7 @@ body {
   margin-left: 0px;
 }
 .contenido h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   margin-top: 2rem;
 }
@@ -362,7 +362,7 @@ body {
   margin-left: 0px;
 }
 .contenidoDos h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   margin-top: 2rem;
 }
@@ -523,7 +523,7 @@ body {
   font-size: 16px;
 }
 .menu h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   margin-top: 3rem;
   text-align: center;
@@ -624,7 +624,7 @@ body {
   }
 }
 .tituloSucursales {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -717,7 +717,7 @@ body {
   }
 }
 .tituloContacto {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   margin-top: 3rem;
   margin-bottom: 1rem;
